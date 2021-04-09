@@ -91,8 +91,8 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
+    background: url("img/texture-paper.webp");
+    background-size: contain;
 }
 
 .b-parallax {
@@ -651,7 +651,11 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #303030 !important;
+}
+
+h2 .white {
+    color: white !important;
 }
 
 .container {
@@ -740,7 +744,7 @@ h4 {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
+    margin: 0 auto 24px auto;
 }
 
 .portfolio-row {
@@ -810,19 +814,34 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/planification-mains-smartphone-bureau-petit.webp");
+}
+
+.bg-banniere-wide {
+    background-image: url("img/planification-mains-smartphone-bureau-moyen.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/planification-main-bureau-marqueurs-petit.webp");
+}
+
+@media (min-width: 414px) {
+    .bg-banniere,
+    .bg-banniere-wide {
+        background-image: url("img/planification-mains-smartphone-bureau.webp");
+    }
+    
+    .bg-presentation {
+        background-image: url("img/planification-main-bureau-marqueurs.webp");
+    }
 }
 
 @media (max-width: 1024px) {
